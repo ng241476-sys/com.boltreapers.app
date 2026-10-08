@@ -1,36 +1,380 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOLT REAPERS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BOLT REAPERS</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#070707;
+    color:white;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    padding:28px 15px;
+    background:
+    linear-gradient(135deg,#250000,#090909 60%,#180000);
+    border-bottom:1px solid #ff2424;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:3px solid #ff2525;
+    margin-bottom:12px;
+    background:#111;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+}
+
+.header h1{
+    color:#ff2929;
+    font-size:29px;
+    letter-spacing:3px;
+}
+
+.header p{
+    color:#999;
+    font-size:12px;
+    margin-top:6px;
+    letter-spacing:2px;
+}
+
+/* MAIN */
+
+.container{
+    padding:18px;
+    max-width:600px;
+    margin:auto;
+}
+
+.title{
+    font-size:20px;
+    color:#ff3030;
+    margin:10px 0 13px;
+}
+
+/* TOURNAMENT */
+
+.tournament{
+    background:
+    linear-gradient(145deg,#300000,#100000);
+    border:1px solid #ff2929;
+    border-radius:17px;
+    padding:18px;
+    box-shadow:0 8px 30px #000;
+}
+
+.live{
+    display:inline-block;
+    background:#e60000;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+.tournament h2{
+    font-size:21px;
+    margin-bottom:7px;
+}
+
+.tournament p{
+    color:#aaa;
+    font-size:13px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:9px;
+    margin-top:15px;
+}
+
+.info-box{
+    background:#171717;
+    border-radius:10px;
+    padding:11px;
+    font-size:12px;
+    color:#bbb;
+}
+
+.info-box strong{
+    color:white;
+    display:block;
+    margin-top:3px;
+}
+
+/* MENU */
+
+.menu{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.card{
+    background:
+    linear-gradient(145deg,#171717,#0e0e0e);
+    border:1px solid #292929;
+    border-radius:15px;
+    padding:20px 10px;
+    text-align:center;
+    color:white;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.card:hover{
+    border-color:#ff2929;
+    background:#210000;
+    transform:translateY(-2px);
+}
+
+.icon{
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.card span{
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* ABOUT */
+
+.about{
+    background:#111;
+    border:1px solid #292929;
+    border-radius:15px;
+    padding:18px;
+    line-height:1.6;
+    color:#aaa;
+    font-size:13px;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    padding:28px 10px;
+    color:#666;
+    font-size:11px;
+}
+
+.footer b{
+    color:#ff2929;
+}
+
+</style>
 </head>
+
 
 <body>
 
-<h1>BOLT REAPERS</h1>
+<!-- HEADER -->
 
-<p>OFFICIAL ESPORTS TEAM APP</p>
+<header class="header">
 
-<h2>🔥 TODAY TOURNAMENT</h2>
+    <div class="logo">⚡</div>
 
-<p>🏆 Tournament Name: BOLT REAPERS Tournament</p>
-<p>🕐 Time: 08:00 PM</p>
-<p>💰 Prize Pool: ৳5,000</p>
+    <h1>BOLT REAPERS</h1>
 
-<h2>👥 PLAYER LIST</h2>
-<p>Player information will appear here.</p>
+    <p>OFFICIAL ESPORTS TEAM</p>
 
-<h2>🏅 CHAMPIONS</h2>
-<p>Our Champions</p>
+</header>
 
-<h2>📜 TEAM RULES</h2>
-<p>Official BOLT REAPERS Team Rules</p>
 
-<h2>🔗 SOCIAL LINKS</h2>
-<p>Official Social Media</p>
+<main class="container">
 
-<h2>📞 CONTACT</h2>
-<p>Contact BOLT REAPERS</p>
+
+<!-- TODAY TOURNAMENT -->
+
+<h2 class="title">🔥 TODAY TOURNAMENT</h2>
+
+<div class="tournament">
+
+    <span class="live">● UPCOMING</span>
+
+    <h2>BOLT REAPERS TOURNAMENT</h2>
+
+    <p>
+        Get ready for today's battle. Join the tournament
+        and prove your skills.
+    </p>
+
+    <div class="info">
+
+        <div class="info-box">
+            🕐 TIME
+            <strong>08:00 PM</strong>
+        </div>
+
+        <div class="info-box">
+            🏆 PRIZE POOL
+            <strong>৳ 5,000</strong>
+        </div>
+
+        <div class="info-box">
+            🎟️ ENTRY FEE
+            <strong>৳ 50</strong>
+        </div>
+
+        <div class="info-box">
+            👥 MODE
+            <strong>SQUAD</strong>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- MENU -->
+
+<h2 class="title">⚡ BOLT REAPERS</h2>
+
+<div class="menu">
+
+
+    <div class="card" onclick="openPage('TOURNAMENT')">
+
+        <div class="icon">🏆</div>
+
+        <span>TOURNAMENT</span>
+
+    </div>
+
+
+    <div class="card" onclick="openPage('PLAYER LIST')">
+
+        <div class="icon">👥</div>
+
+        <span>PLAYER LIST</span>
+
+    </div>
+
+
+    <div class="card" onclick="openPage('CHAMPIONS')">
+
+        <div class="icon">🥇</div>
+
+        <span>CHAMPIONS</span>
+
+    </div>
+
+
+    <div class="card" onclick="openPage('TEAM RULES')">
+
+        <div class="icon">📜</div>
+
+        <span>TEAM RULES</span>
+
+    </div>
+
+
+    <div class="card" onclick="openPage('ANNOUNCEMENT')">
+
+        <div class="icon">📢</div>
+
+        <span>ANNOUNCEMENT</span>
+
+    </div>
+
+
+    <div class="card" onclick="openPage('SOCIAL LINKS')">
+
+        <div class="icon">🔗</div>
+
+        <span>SOCIAL LINKS</span>
+
+    </div>
+
+
+</div>
+
+
+<!-- ABOUT -->
+
+<h2 class="title">👑 ABOUT BOLT REAPERS</h2>
+
+<div class="about">
+
+    <b style="color:#ff2929;">
+        BOLT REAPERS ESPORTS
+    </b>
+
+    <br><br>
+
+    Welcome to the official BOLT REAPERS
+    esports team application.
+
+    <br><br>
+
+    Here you can find tournament information,
+    players, champions, announcements,
+    team rules and official social links.
+
+</div>
+
+
+<!-- CONTACT -->
+
+<h2 class="title">📞 CONTACT</h2>
+
+<div class="about">
+
+    For tournament registration, squad recruitment
+    and official information, contact BOLT REAPERS.
+
+</div>
+
+
+</main>
+
+
+<footer class="footer">
+
+    © 2026 <b>BOLT REAPERS</b>
+
+    <br><br>
+
+    OFFICIAL ESPORTS TEAM
+
+</footer>
+
+
+<script>
+
+function openPage(name){
+
+    alert(
+        "BOLT REAPERS\n\n" +
+        name +
+        "\n\nThis section will be connected to the full system."
+    );
+
+}
+
+</script>
+
 
 </body>
 </html>
