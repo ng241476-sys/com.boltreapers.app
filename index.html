@@ -1,385 +1,304 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>BOLT REAPERS</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BOLT REAPERS ESP</title>
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-    background:#070707;
-    color:white;
-}
-
-/* HEADER */
-
-.header{
-    text-align:center;
-    padding:28px 15px;
-    background:
-    linear-gradient(135deg,#250000,#090909 60%,#180000);
-    border-bottom:1px solid #ff2424;
-}
-
-.logo{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    border:3px solid #ff2525;
-    margin-bottom:12px;
-    background:#111;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    font-size:35px;
-}
-
-.header h1{
-    color:#ff2929;
-    font-size:29px;
-    letter-spacing:3px;
-}
-
-.header p{
-    color:#999;
-    font-size:12px;
-    margin-top:6px;
-    letter-spacing:2px;
-}
-
-/* MAIN */
-
-.container{
-    padding:18px;
-    max-width:600px;
-    margin:auto;
-}
-
-.title{
-    font-size:20px;
-    color:#ff3030;
-    margin:10px 0 13px;
-}
-
-/* TOURNAMENT */
-
-.tournament{
-    background:
-    linear-gradient(145deg,#300000,#100000);
-    border:1px solid #ff2929;
-    border-radius:17px;
-    padding:18px;
-    box-shadow:0 8px 30px #000;
-}
-
-.live{
-    display:inline-block;
-    background:#e60000;
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:11px;
-    font-weight:bold;
-    margin-bottom:12px;
-}
-
-.tournament h2{
-    font-size:21px;
-    margin-bottom:7px;
-}
-
-.tournament p{
-    color:#aaa;
-    font-size:13px;
-}
-
-.info{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:9px;
-    margin-top:15px;
-}
-
-.info-box{
-    background:#171717;
-    border-radius:10px;
-    padding:11px;
-    font-size:12px;
-    color:#bbb;
-}
-
-.info-box strong{
-    color:white;
-    display:block;
-    margin-top:3px;
-}
-
-/* MENU */
-
-.menu{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-}
-
-.card{
-    background:
-    linear-gradient(145deg,#171717,#0e0e0e);
-    border:1px solid #292929;
-    border-radius:15px;
-    padding:20px 10px;
-    text-align:center;
-    color:white;
-    cursor:pointer;
-    transition:.2s;
-}
-
-.card:hover{
-    border-color:#ff2929;
-    background:#210000;
-    transform:translateY(-2px);
-}
-
-.icon{
-    font-size:28px;
-    margin-bottom:8px;
-}
-
-.card span{
-    font-size:13px;
-    font-weight:bold;
-}
-
-/* ABOUT */
-
-.about{
-    background:#111;
-    border:1px solid #292929;
-    border-radius:15px;
-    padding:18px;
-    line-height:1.6;
-    color:#aaa;
-    font-size:13px;
-}
-
-/* FOOTER */
-
-.footer{
-    text-align:center;
-    padding:28px 10px;
-    color:#666;
-    font-size:11px;
-}
-
-.footer b{
-    color:#ff2929;
-}
-
+*{box-sizing:border-box}
+body{margin:0;background:#090909;color:#fff;font-family:Arial,sans-serif}
+header{background:#151515;border-bottom:2px solid #e32323;padding:22px 15px;text-align:center}
+header h1{color:#ff3030;margin:0;font-size:27px;letter-spacing:2px}
+header p{color:#bbb;margin:8px 0 0;font-size:12px}
+main{max-width:700px;margin:auto;padding:16px}
+.card{background:#151515;border:1px solid #333;border-radius:12px;padding:16px;margin-bottom:16px}
+h2{font-size:18px;margin-top:0;color:#ff3939}
+input,select,button{width:100%;padding:12px;margin:6px 0;border-radius:7px;font-size:15px}
+input,select{background:#090909;color:white;border:1px solid #444}
+button{border:0;background:#e32323;color:white;font-weight:bold;cursor:pointer}
+button:disabled{opacity:.5}
+.secondary{background:#333}
+.delete{background:#721b1b}
+.small{font-size:12px;color:#bbb}
+.tournament{border:1px solid #383838;padding:13px;border-radius:9px;margin-top:12px}
+.tournament h3{margin:0 0 10px;color:#fff}
+.tag{color:#ff5555;font-weight:bold}
+.actions{display:flex;gap:8px}
+.actions button{flex:1}
+.hidden{display:none}
+#message{white-space:pre-wrap;font-size:13px;color:#ff7777}
+footer{text-align:center;color:#777;font-size:12px;padding:20px}
 </style>
 </head>
-
-
 <body>
-
-<!-- HEADER -->
-
-<header class="header">
-
-    <div class="logo">⚡</div>
-
-    <h1>BOLT REAPERS</h1>
-
-    <p>OFFICIAL ESPORTS TEAM</p>
-
+<header>
+  <h1>⚡ BOLT REAPERS</h1>
+  <p>FREE FIRE ESPORTS & TOURNAMENTS</p>
 </header>
 
-
-<main class="container">
-
-
-<!-- TODAY TOURNAMENT -->
-
-<h2 class="title">🔥 TODAY TOURNAMENT</h2>
-
-<div class="tournament">
-
-    <span class="live">● UPCOMING</span>
-
-    <h2>BOLT REAPERS TOURNAMENT</h2>
-
-    <p>
-        Get ready for today's battle. Join the tournament
-        and prove your skills.
-    </p>
-
-    <div class="info">
-
-        <div class="info-box">
-            🕐 TIME
-            <strong>08:00 PM</strong>
-        </div>
-
-        <div class="info-box">
-            🏆 PRIZE POOL
-            <strong>৳ 5,000</strong>
-        </div>
-
-        <div class="info-box">
-            🎟️ ENTRY FEE
-            <strong>৳ 50</strong>
-        </div>
-
-        <div class="info-box">
-            👥 MODE
-            <strong>SQUAD</strong>
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- MENU -->
-
-<h2 class="title">⚡ BOLT REAPERS</h2>
-
-<div class="menu">
-
-
-    <div class="card" onclick="openPage('TOURNAMENT')">
-
-        <div class="icon">🏆</div>
-
-        <span>TOURNAMENT</span>
-
-    </div>
-
-
-    <div class="card" onclick="openPage('PLAYER LIST')">
-
-        <div class="icon">👥</div>
-
-        <span>PLAYER LIST</span>
-
-    </div>
-
-
-    <div class="card" onclick="openPage('CHAMPIONS')">
-
-        <div class="icon">🥇</div>
-
-        <span>CHAMPIONS</span>
-
-    </div>
-
-
-    <div class="card" onclick="openPage('TEAM RULES')">
-
-        <div class="icon">📜</div>
-
-        <span>TEAM RULES</span>
-
-    </div>
-
-
-    <div class="card" onclick="openPage('ANNOUNCEMENT')">
-
-        <div class="icon">📢</div>
-
-        <span>ANNOUNCEMENT</span>
-
-    </div>
-
-
-    <div class="card" onclick="openPage('SOCIAL LINKS')">
-
-        <div class="icon">🔗</div>
-
-        <span>SOCIAL LINKS</span>
-
-    </div>
-
-
-</div>
-
-
-<!-- ABOUT -->
-
-<h2 class="title">👑 ABOUT BOLT REAPERS</h2>
-
-<div class="about">
-
-    <b style="color:#ff2929;">
-        BOLT REAPERS ESPORTS
-    </b>
-
-    <br><br>
-
-    Welcome to the official BOLT REAPERS
-    esports team application.
-
-    <br><br>
-
-    Here you can find tournament information,
-    players, champions, announcements,
-    team rules and official social links.
-
-</div>
-
-
-<!-- CONTACT -->
-
-<h2 class="title">📞 CONTACT</h2>
-
-<div class="about">
-
-    For tournament registration, squad recruitment
-    and official information, contact BOLT REAPERS.
-
-</div>
-
-
+<main>
+  <section class="card">
+    <h2>🏆 Upcoming Tournaments</h2>
+    <p class="small">সর্বশেষ টুর্নামেন্টের তথ্য এখানে দেখা যাবে।</p>
+    <div id="tournaments">টুর্নামেন্ট লোড হচ্ছে...</div>
+  </section>
+
+  <section class="card" id="loginCard">
+    <h2>🔐 Admin Login</h2>
+    <p class="small">শুধু অনুমোদিত Admin অ্যাকাউন্ট দিয়ে লগইন করুন।</p>
+    <form id="loginForm">
+      <input id="email" type="email" placeholder="Admin Email" required>
+      <input id="password" type="password" placeholder="Password" required>
+      <button type="submit">LOGIN</button>
+    </form>
+    <div id="message"></div>
+  </section>
+
+  <section class="card hidden" id="adminPanel">
+    <h2>⚙️ Admin Panel</h2>
+    <p id="adminStatus" class="small">Admin হিসেবে লগইন করা আছে।</p>
+
+    <form id="tournamentForm">
+      <input id="tournamentName" placeholder="Tournament Name" required>
+      <input id="tournamentDate" type="date" required>
+      <input id="tournamentTime" placeholder="Time (e.g. 8:00 PM)" required>
+      <input id="entryFee" placeholder="Entry Fee (e.g. FREE)" required>
+      <input id="prizePool" placeholder="Prize Pool (e.g. ৳1000)" required>
+      <select id="mode">
+        <option value="Squad">Squad</option>
+        <option value="Duo">Duo</option>
+        <option value="Solo">Solo</option>
+      </select>
+      <select id="status">
+        <option value="Upcoming">Upcoming</option>
+        <option value="Live">Live</option>
+        <option value="Completed">Completed</option>
+      </select>
+      <button id="saveButton" type="submit">ADD TOURNAMENT</button>
+      <button id="cancelEdit" class="secondary hidden" type="button">CANCEL EDIT</button>
+    </form>
+
+    <button id="logoutButton" class="secondary" type="button">LOGOUT</button>
+    <div id="adminMessage" class="small"></div>
+  </section>
 </main>
 
+<footer>BOLT REAPERS ESP • Official Tournament Portal</footer>
 
-<footer class="footer">
-
-    © 2026 <b>BOLT REAPERS</b>
-
-    <br><br>
-
-    OFFICIAL ESPORTS TEAM
-
-</footer>
-
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 
 <script>
+const firebaseConfig = {
+  apiKey: "AIzaSyCX1za7vT5hF5O5LL69CHRT64noMOL80sg",
+  authDomain: "bolt-reaper-f8667.firebaseapp.com",
+  projectId: "bolt-reaper-f8667",
+  storageBucket: "bolt-reaper-f8667.firebasestorage.app",
+  messagingSenderId: "412297753956",
+  appId: "1:412297753956:web:ccc9a34d797483c7e7f671"
+};
 
-function openPage(name){
+const ADMIN_UID = "vrhvSL0XqfVtHFCvPzbyRzmtPkl2";
 
-    alert(
-        "BOLT REAPERS\n\n" +
-        name +
-        "\n\nThis section will be connected to the full system."
-    );
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+const tournamentCollection = db.collection("tournament");
 
+const $ = id => document.getElementById(id);
+let editingId = null;
+let stopTournamentListener = null;
+
+function safe(value) {
+  return String(value ?? "").replace(/[&<>"']/g, ch => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;",
+    '"':"&quot;", "'":"&#39;"
+  })[ch]);
 }
 
-</script>
+function showMessage(text) {
+  $("message").textContent = text;
+}
 
-<!-- BOLT REAPERS Admin UID -->
-<script>
-const ADMIN_UID = "vrhvSL0XqfVtHFCvPzbyRzmtPkl2";
+function resetForm() {
+  editingId = null;
+  $("tournamentForm").reset();
+  $("saveButton").textContent = "ADD TOURNAMENT";
+  $("cancelEdit").classList.add("hidden");
+}
+
+function renderTournaments(snapshot) {
+  const container = $("tournaments");
+
+  if (snapshot.empty) {
+    container.textContent = "এখনো কোনো টুর্নামেন্ট নেই।";
+    return;
+  }
+
+  container.innerHTML = snapshot.docs.map(doc => {
+    const t = doc.data();
+    const adminButtons = auth.currentUser &&
+      auth.currentUser.uid === ADMIN_UID
+      ? `<div class="actions">
+          <button type="button" data-edit="${safe(doc.id)}" class="secondary">EDIT</button>
+          <button type="button" data-delete="${safe(doc.id)}" class="delete">DELETE</button>
+        </div>`
+      : "";
+
+    return `<article class="tournament">
+      <h3>${safe(t.name || "Tournament")}</h3>
+      <p>📅 তারিখ: ${safe(t.date || "TBA")}</p>
+      <p>⏰ সময়: ${safe(t.time || "TBA")}</p>
+      <p>🎮 Mode: ${safe(t.mode || "Squad")}</p>
+      <p>🎟 Entry Fee: ${safe(t.entryFee || "TBA")}</p>
+      <p>🏆 Prize Pool: ${safe(t.prizePool || "TBA")}</p>
+      <p>Status: <span class="tag">${safe(t.status || "Upcoming")}</span></p>
+      ${adminButtons}
+    </article>`;
+  }).join("");
+}
+
+function watchTournaments() {
+  if (stopTournamentListener) stopTournamentListener();
+
+  stopTournamentListener = tournamentCollection.onSnapshot(
+    renderTournaments,
+    error => {
+      $("tournaments").textContent =
+        "টুর্নামেন্ট লোড হয়নি। Firebase Firestore Rules পরীক্ষা করুন।";
+      console.error(error);
+    }
+  );
+}
+
+function setAdminUI(user) {
+  const isAdmin = !!user && user.uid === ADMIN_UID;
+
+  $("adminPanel").classList.toggle("hidden", !isAdmin);
+  $("loginCard").classList.toggle("hidden", isAdmin);
+
+  if (user && !isAdmin) {
+    showMessage("এই অ্যাকাউন্টটি Admin নয়। অনুমোদিত Admin অ্যাকাউন্ট ব্যবহার করুন।");
+  } else {
+    showMessage("");
+  }
+
+  watchTournaments();
+}
+
+$("loginForm").addEventListener("submit", async event => {
+  event.preventDefault();
+  showMessage("লগইন হচ্ছে...");
+
+  try {
+    await auth.signInWithEmailAndPassword(
+      $("email").value.trim(),
+      $("password").value
+    );
+  } catch (error) {
+    showMessage("লগইন হয়নি: " + error.message);
+  }
+});
+
+auth.onAuthStateChanged(user => {
+  setAdminUI(user);
+});
+
+$("logoutButton").addEventListener("click", async () => {
+  try {
+    resetForm();
+    await auth.signOut();
+  } catch (error) {
+    $("adminMessage").textContent = error.message;
+  }
+});
+
+$("tournamentForm").addEventListener("submit", async event => {
+  event.preventDefault();
+
+  const user = auth.currentUser;
+  if (!user || user.uid !== ADMIN_UID) {
+    $("adminMessage").textContent = "Admin অনুমতি নেই।";
+    return;
+  }
+
+  const data = {
+    name: $("tournamentName").value.trim(),
+    date: $("tournamentDate").value,
+    time: $("tournamentTime").value.trim(),
+    entryFee: $("entryFee").value.trim(),
+    prizePool: $("prizePool").value.trim(),
+    mode: $("mode").value,
+    status: $("status").value
+  };
+
+  $("saveButton").disabled = true;
+  $("adminMessage").textContent = "সংরক্ষণ হচ্ছে...";
+
+  try {
+    if (editingId) {
+      await tournamentCollection.doc(editingId).update(data);
+      $("adminMessage").textContent = "টুর্নামেন্ট আপডেট হয়েছে।";
+    } else {
+      await tournamentCollection.add(data);
+      $("adminMessage").textContent = "নতুন টুর্নামেন্ট যোগ হয়েছে।";
+    }
+    resetForm();
+  } catch (error) {
+    $("adminMessage").textContent =
+      "সংরক্ষণ হয়নি। Firebase Rules ও Admin UID পরীক্ষা করুন।";
+    console.error(error);
+  } finally {
+    $("saveButton").disabled = false;
+  }
+});
+
+$("cancelEdit").addEventListener("click", resetForm);
+
+$("tournaments").addEventListener("click", async event => {
+  const user = auth.currentUser;
+  if (!user || user.uid !== ADMIN_UID) return;
+
+  const editId = event.target.dataset.edit;
+  const deleteId = event.target.dataset.delete;
+
+  if (editId) {
+    try {
+      const doc = await tournamentCollection.doc(editId).get();
+      if (!doc.exists) return;
+
+      const t = doc.data();
+      editingId = editId;
+      $("tournamentName").value = t.name || "";
+      $("tournamentDate").value = t.date || "";
+      $("tournamentTime").value = t.time || "";
+      $("entryFee").value = t.entryFee || "";
+      $("prizePool").value = t.prizePool || "";
+      $("mode").value = t.mode || "Squad";
+      $("status").value = t.status || "Upcoming";
+      $("saveButton").textContent = "SAVE CHANGES";
+      $("cancelEdit").classList.remove("hidden");
+      $("adminPanel").scrollIntoView({behavior:"smooth"});
+    } catch (error) {
+      $("adminMessage").textContent = "তথ্য লোড হয়নি।";
+    }
+  }
+
+  if (deleteId) {
+    if (!confirm("এই টুর্নামেন্টটি ডিলিট করতে চান?")) return;
+
+    try {
+      await tournamentCollection.doc(deleteId).delete();
+      $("adminMessage").textContent = "টুর্নামেন্ট ডিলিট হয়েছে।";
+    } catch (error) {
+      $("adminMessage").textContent = "ডিলিট হয়নি। Firebase Rules পরীক্ষা করুন।";
+    }
+  }
+});
+
+watchTournaments();
 </script>
 </body>
 </html>
-
-
