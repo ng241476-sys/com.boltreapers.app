@@ -1,0 +1,13 @@
+{
+  "background_color": "#be2a11",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "BOLT REAPERS",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "BRR",
+  "start_url": "/",
+  "theme_color": "#85175f",
+  "description": "BOLT REAPERS Free Fire Tournament App",
+  "id": "com.boltreapers.app"
+}
